@@ -35,7 +35,7 @@ const page: React.FC = () => {
                         </ul>
                     </div>
                     <div className="right">
-                        <Image fill src='/images/about.png' alt='hero' />
+                        <Image fill src='/images/about.png' alt='About' />
                     </div>
                 </div>
             </section>
