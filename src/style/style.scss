@@ -233,20 +233,81 @@ main {
 
                 h3 {
                     color: $color-4;
-                    margin-bottom: 15px;
-                    font-size: 35px;
+                    margin-bottom: 25px;
+                    font-size: 40px;
                 }
 
                 h2 {
                     color: $color-2;
-                    font-size: 45px;
-                    margin-bottom: 20px;
+                    font-size: 40px;
+                    margin-bottom: 30px;
                 }
 
                 p {
                     color: $color-5;
                 }
 
+
+                img {
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+
+    #contact {
+        .row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            div {
+                position: relative;
+                height: 500px;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    gap: 13px;
+
+                    input {
+                        border-radius: 10px;
+                        padding: 20px;
+                        background: #0723416a;
+                        border: 1px solid #50cf5235;
+                        color: $color-2;
+                    }
+
+                    textarea {
+                        resize: none;
+                        padding: 20px;
+                        border-radius: 10px;
+                        font-family: 'Open Sans', sans-serif;
+                        background: #0723416a;
+                        border: 1px solid #50cf5235;
+                        height: 200px;
+                    }
+
+                    button {
+                        background: $color-4;
+                        padding: 15px 0;
+                        border: none;
+                        border-radius: 10px;
+                        color: $color-2;
+                        font-size: 20px;
+                        font-weight: bold;
+                        cursor: pointer;
+
+                        &:hover {
+                            opacity: 0.9;
+                        }
+                    }
+                }
 
                 img {
                     object-fit: contain;

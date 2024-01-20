@@ -189,18 +189,70 @@ main #about .row div {
 }
 main #about .row div h3 {
   color: #50cf52;
-  margin-bottom: 15px;
-  font-size: 35px;
+  margin-bottom: 25px;
+  font-size: 40px;
 }
 main #about .row div h2 {
   color: #fff;
-  font-size: 45px;
-  margin-bottom: 20px;
+  font-size: 40px;
+  margin-bottom: 30px;
 }
 main #about .row div p {
   color: rgba(255, 255, 255, 0.8549019608);
 }
 main #about .row div img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+main #contact .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main #contact .row div {
+  position: relative;
+  height: 500px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main #contact .row div form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 13px;
+}
+main #contact .row div form input {
+  border-radius: 10px;
+  padding: 20px;
+  background: rgba(7, 35, 65, 0.4156862745);
+  border: 1px solid rgba(80, 207, 82, 0.2078431373);
+  color: #fff;
+}
+main #contact .row div form textarea {
+  resize: none;
+  padding: 20px;
+  border-radius: 10px;
+  font-family: "Open Sans", sans-serif;
+  background: rgba(7, 35, 65, 0.4156862745);
+  border: 1px solid rgba(80, 207, 82, 0.2078431373);
+  height: 200px;
+}
+main #contact .row div form button {
+  background: #50cf52;
+  padding: 15px 0;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+main #contact .row div form button:hover {
+  opacity: 0.9;
+}
+main #contact .row div img {
   -o-object-fit: contain;
      object-fit: contain;
 }
