@@ -1,11 +1,11 @@
 import React from 'react'
 
-const page: React.FC = () => {
+const NotFound = () => {
     return (
         <div>
-            Contact
+            Not Found
         </div>
     )
 }
 
-export default page
+export default NotFound

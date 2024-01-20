@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+html,
+body {
+    background-color: #172c42;
+    font-family: 'Open Sans', sans-serif;
+}
+
+// Colors
+$color-1:#000;
+$color-2:#fff;
+$color-3:#34495E;
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 30px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    height: 100px;
+
+    &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        content: "";
+        background-color: #041c35;
+    }
+
+    .row {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+
+        ul {
+            display: flex;
+            gap: 40px;
+
+            li {
+                a {
+                    color: $color-2;
+                    font-size: 21px;
+                    transition: 300ms all;
+
+                    &:hover {
+                        opacity: 0.8;
+                    }
+
+                    &.active {
+                        padding: 8px 15px;
+                        border-radius: 10px;
+                        background: $color-2;
+                        color: $color-1;
+                    }
+                }
+            }
+        }
+
+        .logo {
+            color: $color-2;
+            font-size: 27px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            svg {
+                fill: $color-2;
+                font-size: 20px;
+                width: 25px;
+            }
+        }
+
+        div {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            .admin {
+                color: $color-2;
+                font-size: 20px;
+            }
+
+            .login {
+                padding: 15px 25px;
+                border-radius: 10px;
+                border: none;
+                background: $color-2;
+                font-size: 17px;
+                font-weight: 600;
+                cursor: pointer;
+                color: $color-1;
+
+                &:hover {
+                    opacity: 0.9;
+                }
+            }
+        }
+    }
+}
+
+main {
+    .row {
+        display: flex;
+        justify-content: space-between;
+
+        div {
+            position: relative;
+            width: 100%;
+            height: 550px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            ul {
+                display: flex;
+                gap: 15px;
+                margin: 15px 0;
+
+                li {
+                    a {
+                        padding: 13px 20px;
+                        border-radius: 10px;
+                        background: $color-2;
+                        color: $color-1;
+
+                        &:hover {
+                            opacity: 0.8;
+                        }
+
+                        &.about {
+                            background: rgb(95, 146, 18);
+                            color: $color-2;
+                        }
+                    }
+                }
+
+                &.sosial {
+                    gap: 15px;
+                    margin-top: 20px;
+
+                    svg {
+                        fill: $color-2;
+                        width: 35px;
+                        height: 35px;
+                    }
+                }
+            }
+
+            h1 {
+                color: $color-2;
+                width: 200px;
+                font-size: 65px;
+                line-height: 80px;
+            }
+
+            p {
+                padding: 25px 0;
+                color: #ffffffda;
+                font-weight: 500;
+            }
+
+            img {
+                object-fit: contain;
+            }
+        }
+    }
+}
+
+footer {
+    padding-bottom: 20px;
+
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        li {
+            a {
+                color: #5e768e;
+                font-weight: 600;
+                font-size: 25px;
+            }
+            p{
+                color: #5e768e;
+            }
+        }
+    }
+}

@@ -1,11 +1,11 @@
 import React from 'react'
 
-const page: React.FC = () => {
+const loading = () => {
     return (
         <div>
-            Contact
+            Loading....
         </div>
     )
 }
 
-export default page
+export default loading
