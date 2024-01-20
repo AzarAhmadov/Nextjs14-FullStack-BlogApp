@@ -97,11 +97,11 @@ header .row div .login:hover {
   opacity: 0.9;
 }
 
-main .row {
+main #home {
   display: flex;
   justify-content: space-between;
 }
-main .row div {
+main #home div {
   position: relative;
   width: 100%;
   height: 550px;
@@ -109,45 +109,98 @@ main .row div {
   flex-direction: column;
   justify-content: center;
 }
-main .row div ul {
+main #home div ul {
   display: flex;
   gap: 15px;
   margin: 15px 0;
 }
-main .row div ul li a {
+main #home div ul li a {
   padding: 13px 20px;
   border-radius: 10px;
   background: #fff;
   color: #000;
 }
-main .row div ul li a:hover {
+main #home div ul li a:hover {
   opacity: 0.8;
 }
-main .row div ul li a.about {
+main #home div ul li a.about {
   background: rgb(95, 146, 18);
   color: #fff;
 }
-main .row div ul.sosial {
+main #home div ul.sosial {
   gap: 15px;
   margin-top: 20px;
 }
-main .row div ul.sosial svg {
+main #home div ul.sosial svg {
   fill: #fff;
   width: 35px;
   height: 35px;
 }
-main .row div h1 {
+main #home div h1 {
   color: #fff;
   width: 200px;
   font-size: 65px;
   line-height: 80px;
 }
-main .row div p {
+main #home div p {
   padding: 25px 0;
   color: rgba(255, 255, 255, 0.8549019608);
   font-weight: 500;
 }
-main .row div img {
+main #home div img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+main #about .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main #about .row ul {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+}
+main #about .row ul li {
+  border: 1px solid rgba(95, 146, 18, 0.211);
+  padding: 20px;
+  border-radius: 10px;
+  transition: 300ms all;
+}
+main #about .row ul li:hover {
+  transform: scale(1.1);
+  background: #50cf52;
+}
+main #about .row ul li:hover span {
+  color: #fff;
+}
+main #about .row ul li span {
+  color: #50cf52;
+  font-weight: 600;
+  font-size: 30px;
+}
+main #about .row div {
+  width: 100%;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+main #about .row div h3 {
+  color: #50cf52;
+  margin-bottom: 15px;
+  font-size: 35px;
+}
+main #about .row div h2 {
+  color: #fff;
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+main #about .row div p {
+  color: rgba(255, 255, 255, 0.8549019608);
+}
+main #about .row div img {
   -o-object-fit: contain;
      object-fit: contain;
 }

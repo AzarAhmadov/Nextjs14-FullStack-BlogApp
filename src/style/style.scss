@@ -19,6 +19,8 @@ body {
 $color-1:#000;
 $color-2:#fff;
 $color-3:#34495E;
+$color-4:#50cf52;
+$color-5:#ffffffda;
 
 .container {
     max-width: 1300px;
@@ -118,7 +120,7 @@ header {
 }
 
 main {
-    .row {
+    #home {
         display: flex;
         justify-content: space-between;
 
@@ -174,12 +176,81 @@ main {
 
             p {
                 padding: 25px 0;
-                color: #ffffffda;
+                color: $color-5;
                 font-weight: 500;
             }
 
             img {
                 object-fit: contain;
+            }
+        }
+    }
+
+    #about {
+        .row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            ul {
+                display: flex;
+                gap: 20px;
+                margin-top: 30px;
+
+                li {
+                    border: 1px solid rgba(95, 146, 18, 0.211);
+                    padding: 20px;
+                    border-radius: 10px;
+                    transition: 300ms all;
+
+                    &:hover {
+                        transform: scale(1.1);
+                        background: $color-4;
+                    }
+
+                    &:hover {
+                        span {
+                            color: $color-2;
+                        }
+                    }
+
+                    span {
+                        color: $color-4;
+                        font-weight: 600;
+                        font-size: 30px;
+                    }
+                }
+            }
+
+
+            div {
+                width: 100%;
+                height: 550px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                position: relative;
+
+                h3 {
+                    color: $color-4;
+                    margin-bottom: 15px;
+                    font-size: 35px;
+                }
+
+                h2 {
+                    color: $color-2;
+                    font-size: 45px;
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    color: $color-5;
+                }
+
+
+                img {
+                    object-fit: contain;
+                }
             }
         }
     }
@@ -199,7 +270,8 @@ footer {
                 font-weight: 600;
                 font-size: 25px;
             }
-            p{
+
+            p {
                 color: #5e768e;
             }
         }

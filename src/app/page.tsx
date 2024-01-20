@@ -6,7 +6,7 @@ import React from 'react'
 const Home = () => {
   return (
     <main>
-      <div className="row">
+      <section id="home">
         <div>
           <h1> Creative Thoughts Agency. </h1>
           <p>
@@ -31,9 +31,9 @@ const Home = () => {
           </ul>
         </div>
         <div>
-          <Image fill src='/images/banner.png' alt='banner' />
+          <Image fill src='/images/banner.png' alt='hero' />
         </div>
-      </div>
+      </section>
     </main>
   )
 }
