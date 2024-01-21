@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { CiInstagram } from "react-icons/ci";
 import { FaGithub } from "react-icons/fa";
@@ -27,14 +26,14 @@ export const navLinks: NavlinksProps[] = [
 export const sosials = [
     {
         icon: React.createElement(CiInstagram),
-        path: ""
+        path: "https://www.instagram.com/azarahmadov_/"
     },
     {
         icon: React.createElement(FaGithub),
-        path: ""
+        path: "https://github.com/AzarAhmadov"
     },
     {
         icon: React.createElement(CiLinkedin),
-        path: ""
+        path: "https://www.linkedin.com/in/azar-ahmadov/"
     }
 ];
