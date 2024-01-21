@@ -5,10 +5,10 @@ const Footer: React.FC = () => {
         <footer>
             <ul>
                 <li>
-                    <a target='_blank' href="#">azardev</a>
+                    <a target='_blank' href="https://azarahmadov.com/">azardev</a>
                 </li>
                 <li>
-                   <p> azar creative thoughts agency @ All rights reserved</p>
+                    <p> All rights reserved</p>
                 </li>
             </ul>
         </footer>
