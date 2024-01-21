@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <main>
       <section id="home">
-        <div>
+        <div className='left'>
           <h1> Creative Thoughts Agency. </h1>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam quaerat Lorem, ipsum dolor.
@@ -30,7 +30,7 @@ const Home = () => {
             }
           </ul>
         </div>
-        <div>
+        <div className='right'>
           <Image fill src='/images/banner.png' alt='hero' />
         </div>
       </section>
