@@ -273,6 +273,9 @@ main .post-cards {
   border: 1px solid rgba(80, 207, 82, 0.168627451);
   border-radius: 10px;
   transition: 300ms all;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 main .post-cards .post-content {
   padding: 15px;
@@ -320,7 +323,6 @@ main .post-cards .date {
 }
 main .post-cards .read-more {
   text-align: center;
-  padding: 15px 0;
   border-top: 1px solid rgba(80, 207, 82, 0.168627451);
   transition: 300ms all;
 }
@@ -333,6 +335,8 @@ main .post-cards .read-more:hover a {
   gap: 15px;
 }
 main .post-cards .read-more a {
+  width: 100%;
+  padding: 15px 0;
   transition: 300ms all;
   display: flex;
   justify-content: center;
@@ -349,7 +353,7 @@ main #blog-detail .row {
   gap: 25px;
 }
 main #blog-detail .row .left {
-  width: 30%;
+  width: 35%;
   height: 600px;
   position: relative;
 }
@@ -359,7 +363,7 @@ main #blog-detail .row .left img {
      object-fit: cover;
 }
 main #blog-detail .row .right {
-  width: 70%;
+  width: 65%;
 }
 main #blog-detail .row .right h4 {
   font-size: 35px;
@@ -545,7 +549,7 @@ footer ul li p {
   }
   main #blog-detail .row .left {
     width: 100%;
-    height: 280px;
+    height: 250px;
   }
   main #blog-detail .row .right {
     width: 100%;

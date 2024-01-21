@@ -336,6 +336,9 @@ main {
         border: 1px solid #50cf522b;
         border-radius: 10px;
         transition: 300ms all;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
 
         .post-content {
             padding: 15px;
@@ -388,7 +391,6 @@ main {
 
         .read-more {
             text-align: center;
-            padding: 15px 0;
             border-top: 1px solid #50cf522b;
             transition: 300ms all;
 
@@ -403,6 +405,8 @@ main {
             }
 
             a {
+                width: 100%;
+                padding: 15px 0;
                 transition: 300ms all;
                 display: flex;
                 justify-content: center;
@@ -422,7 +426,7 @@ main {
             gap: 25px;
 
             .left {
-                width: 30%;
+                width: 35%;
                 height: 600px;
                 position: relative;
 
@@ -434,7 +438,7 @@ main {
             }
 
             .right {
-                width: 70%;
+                width: 65%;
 
                 h4 {
                     font-size: 35px;
@@ -670,7 +674,7 @@ footer {
 
                 .left {
                     width: 100%;
-                    height: 280px;
+                    height: 250px;
                 }
 
                 .right {
