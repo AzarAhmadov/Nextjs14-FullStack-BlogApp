@@ -4,8 +4,7 @@ import React from 'react'
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { CgCalendarDates } from "react-icons/cg";
 
-
-const PostCards = () => {
+const PostCards: React.FC = () => {
     return (
         <section className='post-cards'>
             <div className="post-content">
@@ -24,7 +23,7 @@ const PostCards = () => {
                 </span>
             </div>
             <div className="read-more">
-                <Link href='/'>
+                <Link href='/blog/blog-1'>
                     Read more
                     <FaLongArrowAltRight />
                 </Link>
