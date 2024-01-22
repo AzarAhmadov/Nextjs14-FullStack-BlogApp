@@ -1,6 +1,6 @@
 'use client'
 import Link from 'next/link';
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { navLinks } from '../constants/constants';
 import Links from './links/Links';
 import { FaBars } from "react-icons/fa6";
@@ -10,14 +10,32 @@ const Header: React.FC = () => {
     const isAdmin = true
 
     const [mobile, setMobile] = useState(false)
+    const mobileMenuRef = useRef<HTMLDivElement>(null);
 
     const openMenu = () => {
         setMobile(!mobile)
     }
 
+    useEffect(() => {
+        const closeMenuOnOutsideClick = (event: MouseEvent) => {
+            if (
+                mobile &&
+                mobileMenuRef.current &&
+                !mobileMenuRef.current.contains(event.target as Node)
+            ) {
+                setMobile(false);
+            }
+        };
+
+        document.addEventListener('click', closeMenuOnOutsideClick);
+        return () => {
+            document.removeEventListener('click', closeMenuOnOutsideClick);
+        };
+    }, [mobile]);
+
     return (
         <>
-            <header id='header'>
+            <header id='header' className={`${mobile ? "active" : ''}`}>
                 <div className="row">
                     <div className="logo">
                         <Link prefetch={true} href='/'> AzarDev</Link>
@@ -46,7 +64,7 @@ const Header: React.FC = () => {
                 </div>
             </header>
 
-            <div className={`mobile-header ${mobile ? "active" : ''}`}>
+            <div ref={mobileMenuRef} className={`mobile-header ${mobile ? "active" : ''}`}>
                 <ul>
                     {
                         navLinks.map((el, idx) => (
