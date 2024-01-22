@@ -518,13 +518,13 @@ footer ul li p {
 
 @media only screen and (max-width: 992px) {
   header {
-    height: 80px;
+    height: 70px;
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
   header::after {
-    height: 80px;
+    height: 70px;
   }
   header .row .logo a {
     font-size: 23px;

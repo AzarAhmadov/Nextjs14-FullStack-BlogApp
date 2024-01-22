@@ -616,13 +616,13 @@ footer {
 @media only screen and (max-width:992px) {
 
     header {
-        height: 80px;
+        height: 70px;
         display: flex;
         align-items: center;
         justify-content: space-between;
 
         &::after {
-            height: 80px;
+            height: 70px;
         }
 
         .row {
