@@ -1,6 +1,5 @@
 import PostUser from '@/components/postUser/PostUser';
 import { getPost } from '@/lib/data';
-import { title } from 'process';
 import React from 'react';
 interface PageDetailProps {
     params: {
