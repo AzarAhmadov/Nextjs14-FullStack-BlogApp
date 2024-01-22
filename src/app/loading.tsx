@@ -1,11 +1,10 @@
-import React from 'react'
-import spinner from '../../public/images/spinner.gif'
 import Image from 'next/image'
+import React from 'react'
 
 const loading = () => {
     return (
         <section id='spinner'>
-            <Image width={135} src={spinner} alt="spinner" />
+            <Image width={135} height={135} src='/images/spinner.gif' alt="spinner" />
         </section>
     )
 }
