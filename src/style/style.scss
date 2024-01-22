@@ -202,6 +202,14 @@ main {
                 padding: 25px 0;
                 color: $color-5;
                 font-weight: 500;
+                font-size: 19px;
+                line-height: 28px;
+                display: flex;
+                flex-direction: column;
+
+                span {
+                    margin-top: 10px;
+                }
             }
 
             img {
@@ -293,50 +301,54 @@ main {
                 align-items: center;
                 justify-content: center;
 
-                form {
-                    display: flex;
-                    flex-direction: column;
-                    width: 100%;
-                    gap: 13px;
-
-                    input {
-                        border-radius: 10px;
-                        padding: 20px;
-                        background: #0723416a;
-                        border: 1px solid #50cf5235;
-                        color: $color-2;
-                    }
-
-                    textarea {
-                        resize: none;
-                        padding: 20px;
-                        border-radius: 10px;
-                        font-family: 'Open Sans', sans-serif;
-                        background: #0723416a;
-                        border: 1px solid #50cf5235;
-                        height: 200px;
-                        color: $color-2;
-                    }
-
-                    button {
-                        background: $color-4;
-                        padding: 15px 0;
-                        border: none;
-                        border-radius: 10px;
-                        color: $color-2;
-                        font-size: 20px;
-                        font-weight: bold;
-                        cursor: pointer;
-
-                        &:hover {
-                            opacity: 0.9;
-                        }
-                    }
-                }
-
                 img {
                     object-fit: contain;
                 }
+            }
+        }
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 13px;
+
+        input {
+            border-radius: 10px;
+            padding: 20px;
+            background: #0723416a;
+            border: 1px solid #50cf5235;
+            color: $color-2;
+
+            &::placeholder {
+                color: $color-2;
+            }
+        }
+
+        textarea {
+            resize: none;
+            padding: 20px;
+            border-radius: 10px;
+            font-family: 'Open Sans', sans-serif;
+            background: #0723416a;
+            border: 1px solid #50cf5235;
+            height: 200px;
+            color: $color-2;
+        }
+
+        button {
+            background: $color-4;
+            padding: 15px 0;
+            border: none;
+            border-radius: 10px;
+            color: $color-2;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+
+            &:hover {
+                opacity: 0.9;
             }
         }
     }
@@ -468,6 +480,29 @@ main {
                     color: $color-5;
                     line-height: 25px;
                 }
+            }
+        }
+    }
+
+    #register {
+        .row {
+            display: flex;
+            justify-content: space-between;
+
+            .left {
+                position: relative;
+                width: 100%;
+                height: 500px;
+
+                img {
+                    object-fit: contain;
+                }
+            }
+
+            .right {
+                width: 100%;
+                display: grid;
+                place-items: center;
             }
         }
     }
@@ -749,6 +784,26 @@ footer {
                 }
             }
         }
+
+        #register {
+            padding-bottom: 10px;
+
+            .row {
+                flex-direction: column;
+
+                .left {
+                    height: 300px;
+                    margin-bottom: 20px;
+                }
+
+                .right {
+                    order: 1;
+                    width: 100%;
+                    display: grid;
+                    place-items: center;
+                }
+            }
+        }
     }
 }
 
@@ -865,6 +920,14 @@ footer {
 
             p {
                 font-size: 16px;
+            }
+        }
+
+        .form {
+
+            button {
+                padding: 10px 0;
+                font-size: 18px;
             }
         }
     }
