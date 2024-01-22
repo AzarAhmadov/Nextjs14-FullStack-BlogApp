@@ -8,8 +8,6 @@ const page: React.FC = async () => {
 
     const posts = await getPosts()
 
-    console.log(posts)
-
     return (
         <main>
             <div className="post-row">

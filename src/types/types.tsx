@@ -18,5 +18,6 @@ export type PostUserProps = {
     username: string;
     createdAt: Date;
     userId: number;
+    img: string;
 }
 
