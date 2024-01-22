@@ -355,7 +355,8 @@ main {
             margin: 0 auto;
 
             img {
-                width: 200px;
+                width: 100%;
+                height: 100%;
                 object-fit: cover;
                 border-radius: 10px;
             }
@@ -433,6 +434,8 @@ main {
                 img {
                     border-radius: 10px;
                     object-fit: cover;
+                    width: 100%;
+                    height: 100%;
                 }
 
             }
@@ -445,37 +448,37 @@ main {
                     color: $color-2;
                 }
 
-                .author {
-                    display: flex;
-                    align-items: center;
-                    gap: 20px;
-                    margin: 20px 0;
-
-                    img {
-                        border-radius: 50%;
-                    }
-
-                    div {
-                        gap: 10px;
-                        display: flex;
-                        align-items: center;
-                        color: $color-2;
-                    }
-
-                    .date {
-                        display: flex;
-                        align-items: center;
-                        gap: 5px;
-                        color: #7d99b6;
-                    }
-                }
-
                 p {
                     color: $color-5;
                     line-height: 25px;
                 }
             }
         }
+    }
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 0;
+
+    img {
+        border-radius: 50%;
+    }
+
+    div {
+        gap: 10px;
+        display: flex;
+        align-items: center;
+        color: $color-2;
+    }
+
+    .date {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        color: #7d99b6;
     }
 }
 
@@ -674,7 +677,11 @@ footer {
 
                 .left {
                     width: 100%;
-                    height: 250px;
+                    height: 200px;
+
+                    img {
+                        height: 100%;
+                    }
                 }
 
                 .right {
@@ -800,6 +807,10 @@ footer {
         }
 
         .post-cards {
+            .image-container {
+                height: 220px;
+            }
+
             p {
                 font-size: 16px;
             }
