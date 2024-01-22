@@ -1,9 +1,11 @@
 import React from 'react'
+import spinner from '../../public/images/spinner.gif'
+import Image from 'next/image'
 
 const loading = () => {
     return (
         <section id='spinner'>
-            <img src="https://digital-business-schweiz.ch/wp-content/uploads/2020/02/global_loader.gif" alt="" />
+            <Image width={135} src={spinner} alt="spinner" />
         </section>
     )
 }
