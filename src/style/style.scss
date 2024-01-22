@@ -34,6 +34,22 @@ $color-5:#ffffffda;
 
 header {
     height: 100px;
+    transition: 300ms all;
+
+    &.active {
+        &::before {
+            position: fixed;
+            top: 0;
+            left: 0;
+            content: "";
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            background-color: hsla(0, 0%, 100%, 0.271);
+            backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+        }
+    }
 
     &::after {
         position: absolute;
@@ -455,6 +471,34 @@ main {
             }
         }
     }
+
+    #not-found {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .img-area {
+            width: 100%;
+            height: 350px;
+            position: relative;
+
+            img {
+                object-fit: contain;
+            }
+        }
+
+        span {
+            color: $color-4;
+            font-size: 30px;
+        }
+
+        a {
+            color: $color-2;
+            font-size: 20px;
+            margin-top: 10px;
+        }
+    }
 }
 
 .author {
@@ -470,7 +514,7 @@ main {
         object-fit: cover;
     }
 
-    .username{
+    .username {
         font-size: 20px;
     }
 
@@ -563,7 +607,6 @@ footer {
         top: 0;
         left: -100%;
         height: 100%;
-        width: 300px;
         background: $color-3;
         z-index: 10;
         display: flex;
@@ -582,6 +625,7 @@ footer {
             flex-direction: column;
             align-items: center;
             gap: 0px;
+            width: 300px;
 
             li {
                 a {
@@ -764,15 +808,15 @@ footer {
             .left {
 
                 h1 {
-                    font-size: 23px;
+                    font-size: 27px;
                     width: max-content;
-                    line-height: 60px;
+                    line-height: 70px;
                 }
 
                 p {
                     padding: 0;
                     margin-bottom: 20px;
-                    font-size: 14px;
+                    font-size: 16px;
                 }
 
                 ul {
