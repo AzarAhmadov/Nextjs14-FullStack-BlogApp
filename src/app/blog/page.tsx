@@ -4,6 +4,11 @@ import { getPosts } from '@/lib/data'
 import { PostProps } from '@/types/types'
 import React from 'react'
 
+export const metadata = {
+    title: 'Blog Page',
+    description: 'Blog description'
+}
+
 const page: React.FC = async () => {
 
     const posts = await getPosts()

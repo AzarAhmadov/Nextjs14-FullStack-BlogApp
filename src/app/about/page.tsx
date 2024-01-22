@@ -1,6 +1,11 @@
 import Image from 'next/image'
 import React from 'react'
 
+export const metadata = {
+    title: 'About Page',
+    description: 'About description'
+}
+
 const page: React.FC = () => {
     return (
         <main>
