@@ -1,29 +1,35 @@
-import Image from 'next/image'
+'use client'
 import Link from 'next/link'
 import React from 'react'
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { CgCalendarDates } from "react-icons/cg";
+import { PostProps } from '@/types/types';
 
-const PostCards: React.FC = () => {
+interface PageDetailProps {
+    post: PostProps;
+}
+
+const PostCards: React.FC<PageDetailProps> = async ({ post }) => {
+
     return (
         <section className='post-cards'>
             <div className="post-content">
                 <div className='image-container'>
-                    <Image fill src='/images/post.png' alt='post' />
+                    <img src={post.img} alt='post' />
                 </div>
                 <span className='category'>
-                    Technology
+                    {post.category}
                 </span>
                 <p>
-                    The Impact of Technology on the Workplace: How Technology is Changing
+                    {post.title}
                 </p>
                 <span className="date">
                     <CgCalendarDates />
-                    August 20, 2022
+                    {post.createdAt.toString().slice(4, 16)}
                 </span>
             </div>
             <div className="read-more">
-                <Link href='/blog/blog-1'>
+                <Link href={`/blog/${post.slug}`}>
                     Read more
                     <FaLongArrowAltRight />
                 </Link>
