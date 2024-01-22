@@ -10,7 +10,10 @@ const Home = () => {
         <div className='left'>
           <h1> Creative Thoughts Agency. </h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam quaerat Lorem, ipsum dolor.
+            Unlock the power of creativity with Creative Thoughts Agency! 🌟 Explore a world of inspiration and unleash your thoughts. Your platform, your voice - start crafting your own blogs today! ✨
+            <span>
+              #CreativityUnleashed #BlogYourStory
+            </span>
           </p>
           <ul className='links'>
             <li>
