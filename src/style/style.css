@@ -385,8 +385,16 @@ main #blog-detail .row .right p {
 }
 .author img {
   border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.author .username {
+  font-size: 20px;
 }
 .author div {
+  border-radius: 5px;
   gap: 10px;
   display: flex;
   align-items: center;

@@ -465,9 +465,17 @@ main {
 
     img {
         border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+    }
+
+    .username{
+        font-size: 20px;
     }
 
     div {
+        border-radius: 5px;
         gap: 10px;
         display: flex;
         align-items: center;
