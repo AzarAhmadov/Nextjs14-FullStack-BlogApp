@@ -47,7 +47,6 @@ header {
             z-index: 1;
             background-color: hsla(0, 0%, 100%, 0.271);
             backdrop-filter: blur(5px);
-            backdrop-filter: blur(5px);
         }
     }
 
@@ -533,6 +532,25 @@ main {
             font-size: 20px;
             margin-top: 10px;
         }
+    }
+}
+
+#spinner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+    background-color: hsla(0, 0%, 100%, 0.087);
+    backdrop-filter: blur(6px);
+
+    img {
+        width: 140px;
+        object-fit: contain;
     }
 }
 
