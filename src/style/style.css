@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto:wght@300;400&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -276,6 +277,12 @@ main .form textarea {
   height: 200px;
   color: #fff;
 }
+main .form textarea::-moz-placeholder {
+  color: #fff;
+}
+main .form textarea::placeholder {
+  color: #fff;
+}
 main .form button {
   background: #50cf52;
   padding: 15px 0;
@@ -372,36 +379,6 @@ main .post-cards .read-more a {
   color: #fff;
   font-weight: bold;
 }
-main #blog-detail {
-  padding: 35px 0;
-}
-main #blog-detail .row {
-  display: flex;
-  gap: 25px;
-}
-main #blog-detail .row .left {
-  width: 35%;
-  height: 600px;
-  position: relative;
-}
-main #blog-detail .row .left img {
-  border-radius: 10px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
-main #blog-detail .row .right {
-  width: 65%;
-}
-main #blog-detail .row .right h4 {
-  font-size: 35px;
-  color: #fff;
-}
-main #blog-detail .row .right p {
-  color: rgba(255, 255, 255, 0.8549019608);
-  line-height: 25px;
-}
 main #register .row {
   display: flex;
   justify-content: space-between;
@@ -445,6 +422,39 @@ main #not-found a {
   margin-top: 10px;
 }
 
+#blog-detail {
+  padding: 35px 0;
+}
+#blog-detail .row {
+  display: flex;
+  gap: 25px;
+}
+#blog-detail .row .left {
+  width: 35%;
+  height: 600px;
+  position: relative;
+}
+#blog-detail .row .left img {
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+#blog-detail .row .right {
+  width: 65%;
+}
+#blog-detail .row .right h4 {
+  font-size: 35px;
+  color: #fff;
+}
+#blog-detail .row .right p {
+  color: rgba(255, 255, 255, 0.8549019608);
+  line-height: 28px;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+}
+
 #spinner {
   position: fixed;
   top: 0;
@@ -473,13 +483,13 @@ main #not-found a {
 }
 .author img {
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 .author .username {
-  font-size: 20px;
+  font-size: 19px;
 }
 .author div {
   border-radius: 5px;
@@ -637,32 +647,6 @@ footer ul li p {
   main .post-row {
     grid-template-columns: repeat(2, 1fr);
   }
-  main #blog-detail {
-    padding: 20px 0;
-  }
-  main #blog-detail .row {
-    display: flex;
-    gap: 25px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  main #blog-detail .row .left {
-    width: 100%;
-    height: 200px;
-  }
-  main #blog-detail .row .left img {
-    height: 100%;
-  }
-  main #blog-detail .row .right {
-    width: 100%;
-  }
-  main #blog-detail .row .right h4 {
-    font-size: 20px;
-  }
-  main #blog-detail .row .right p {
-    font-size: 14px;
-  }
   main #register {
     padding-bottom: 10px;
   }
@@ -679,9 +663,43 @@ footer ul li p {
     display: grid;
     place-items: center;
   }
+  #blog-detail {
+    padding-top: 0;
+  }
+  #blog-detail .row {
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #blog-detail .row .left {
+    width: 100%;
+    height: 240px;
+  }
+  #blog-detail .row .left img {
+    border-radius: 0;
+    height: 100%;
+  }
+  #blog-detail .row .right {
+    padding: 0 20px;
+    width: 100%;
+  }
+  #blog-detail .row .right h4 {
+    font-size: 20px;
+  }
+  #blog-detail .row .right p {
+    font-size: 15px;
+  }
 }
 @media only screen and (max-width: 578px) {
+  header {
+    padding: 0 20px;
+  }
   .container {
+    padding: 0px;
+  }
+  main {
     padding: 0 20px;
   }
   main #about {
@@ -766,11 +784,14 @@ footer ul li p {
     padding: 10px 0;
     font-size: 18px;
   }
+  footer {
+    padding: 0 20px 20px;
+  }
   footer ul li a {
-    font-size: 18px;
+    font-size: 19px;
   }
   footer ul li p {
-    font-size: 13px;
+    font-size: 15px;
     text-align: end;
   }
 }/*# sourceMappingURL=style.css.map */
