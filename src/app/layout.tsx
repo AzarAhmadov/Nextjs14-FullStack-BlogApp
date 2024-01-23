@@ -1,11 +1,11 @@
-import Header from "@/components/header/Header";
 import "../style/style.css";
 import Footer from "@/components/footer/Footer";
 import webLogo from '../../public/images/webLogo.png'
+import Navbar from "@/components/header/navbar/Navbar";
 
 export const metadata = {
   title: {
-    default: 'Home Page',
+    default: 'Home Page | AzarDev',
     template: '%s | AzarDev'
   }
 }
@@ -20,7 +20,7 @@ export default function RootLayout({
       <link rel="icon" type="image/png" href={webLogo.src} />
       <body>
         <div className="container">
-          <Header />
+          <Navbar />
           {children}
           <Footer />
         </div>

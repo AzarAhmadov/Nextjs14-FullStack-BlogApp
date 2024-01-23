@@ -1,11 +1,13 @@
-import React from 'react'
+import { GithubLogin } from '@/lib/action';
+import React from 'react';
 
-const page: React.FC = () => {
+const LoginPage: React.FC = async () => {
+
     return (
-        <div>
+        <form action={GithubLogin}>
+            <button> Login with github </button>
+        </form>
+    );
+};
 
-        </div>
-    )
-}
-
-export default page
+export default LoginPage;

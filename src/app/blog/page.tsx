@@ -1,4 +1,3 @@
-
 import PostCards from '@/components/postCards/PostCards'
 import { getPosts } from '@/lib/data'
 import { PostProps } from '@/types/types'

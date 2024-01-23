@@ -4,9 +4,13 @@ import React, { useState, useEffect, useRef } from 'react';
 import { navLinks } from '../constants/constants';
 import Links from './links/Links';
 import { FaBars } from "react-icons/fa6";
+import { LogoutGithub } from '@/lib/action';
+import { CiLogout } from "react-icons/ci";
+interface Session {
+    session: any
+}
 
-const Header: React.FC = () => {
-    const session = true
+const Header: React.FC<Session> = ({ session }) => {
     const isAdmin = true
 
     const [mobile, setMobile] = useState(false)
@@ -49,10 +53,12 @@ const Header: React.FC = () => {
                         }
                     </ul>
                     <div>
-                        {session ? (
+                        {session?.user ? (
                             <>
-                                {isAdmin && <Links title="Admin" path="/admin" key={-1} />}
-                                <Link href='/login' className='login'> Logout </Link>
+                                {session.user?.isAdmin && <Links title="Admin" path="/admin" key={-1} />}
+                                <form action={LogoutGithub}>
+                                    <button className='login'> Logout <CiLogout /> </button>
+                                </form>
                             </>
                         ) : (
                             <Links title="Login" path="/login" key={-1} />
@@ -75,13 +81,17 @@ const Header: React.FC = () => {
                     }
                 </ul>
                 <div>
-                    {session ? (
+                    {session?.user ? (
                         <>
-                            {isAdmin && <Links title="Admin" path="/admin" key={-1} />}
-                            <Link href='/login' className='login'> Logout </Link>
+                            {session.user?.isAdmin && <Links title="Admin" path="/admin" key={-1} />}
+                            <form action={LogoutGithub}>
+                                <button className='login'> Logout <CiLogout /> </button>
+                            </form>
                         </>
                     ) : (
-                        <Links title="Login" path="/login" key={-1} />
+                        <div className='login-container' onClick={openMenu}>
+                            <Links title="Login" path="/login" key={-1} />
+                        </div>
                     )}
                 </div>
             </div>
