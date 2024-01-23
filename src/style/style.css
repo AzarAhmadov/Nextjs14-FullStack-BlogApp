@@ -99,21 +99,27 @@ header .row div {
   align-items: center;
   gap: 20px;
 }
+header .row div .login,
 header .row div .admin {
-  color: #fff;
-  font-size: 20px;
-}
-header .row div .login {
-  padding: 15px 25px;
+  padding: 15px 20px;
   border-radius: 10px;
   border: none;
-  background: #fff;
+  background: #078809;
   font-size: 17px;
   font-weight: 600;
   cursor: pointer;
-  color: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
 }
-header .row div .login:hover {
+header .row div .login svg,
+header .row div .admin svg {
+  margin-left: 5px;
+  width: 22px;
+  height: 22px;
+}
+header .row div .login:hover,
+header .row div .admin:hover {
   opacity: 0.9;
 }
 
@@ -594,27 +600,31 @@ footer ul li p {
     color: #000;
   }
   .mobile-header div {
-    margin-top: 35px;
     display: flex;
     align-items: center;
     gap: 20px;
+    margin-top: 30px;
   }
-  .mobile-header div .admin {
-    color: #fff;
-    font-size: 20px;
+  .mobile-header div.login-container {
+    margin-top: 0px;
   }
   .mobile-header div .login {
-    padding: 10px 20px;
+    padding: 15px 20px;
     border-radius: 10px;
     border: none;
-    background: #fff;
+    background: #078809;
     font-size: 17px;
     font-weight: 600;
     cursor: pointer;
-    color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
   }
   .mobile-header div .login:hover {
     opacity: 0.9;
+  }
+  .mobile-header div .login svg {
+    margin-left: 10px;
   }
   main #about .row {
     flex-direction: column;
