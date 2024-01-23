@@ -1,4 +1,3 @@
-import { hello } from '@/lib/action'
 import Image from 'next/image'
 import React from 'react'
 
@@ -8,7 +7,7 @@ const page: React.FC = () => {
             <section id='register'>
                 <div className="row">
                     <div className="right">
-                        <form className='form' action={hello}>
+                        <form className='form'>
                             <input type="text" placeholder='username' name='username' />
                             <input type="email" placeholder='email' name='email' />
                             <input type="password" placeholder='password' name='password' />
