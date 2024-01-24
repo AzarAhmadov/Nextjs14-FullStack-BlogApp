@@ -37,6 +37,10 @@ const Header: React.FC<Session> = ({ session }) => {
         };
     }, [mobile]);
 
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    })
+
     return (
         <>
             <header id='header' className={`${mobile ? "active" : ''}`}>
