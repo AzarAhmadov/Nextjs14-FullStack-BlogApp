@@ -20,4 +20,3 @@ export type PostUserProps = {
     userId: number;
     img: string;
 }
-
