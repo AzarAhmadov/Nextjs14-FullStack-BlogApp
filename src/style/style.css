@@ -104,7 +104,7 @@ header .row div .admin {
   padding: 15px 20px;
   border-radius: 10px;
   border: none;
-  background: #078809;
+  background: #2ab263;
   font-size: 17px;
   font-weight: 600;
   cursor: pointer;
@@ -258,9 +258,9 @@ main .form {
   display: flex;
   flex-direction: column;
   width: 100%;
-  gap: 13px;
 }
 main .form input {
+  margin-bottom: 15px;
   border-radius: 10px;
   padding: 20px;
   background: rgba(7, 35, 65, 0.4156862745);
@@ -282,6 +282,7 @@ main .form textarea {
   border: 1px solid rgba(80, 207, 82, 0.2078431373);
   height: 200px;
   color: #fff;
+  margin-bottom: 20px;
 }
 main .form textarea::-moz-placeholder {
   color: #fff;
@@ -298,12 +299,16 @@ main .form button {
   font-size: 20px;
   font-weight: bold;
   cursor: pointer;
+  margin-bottom: 10px;
+}
+main .form button.disabled {
+  background-color: red;
 }
 main .form button:hover {
   opacity: 0.9;
 }
 main .post-row {
-  padding: 35px 0;
+  padding: 25px 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 15px;
@@ -399,9 +404,28 @@ main #register .row .left img {
      object-fit: contain;
 }
 main #register .row .right {
+  max-width: 100%;
   width: 100%;
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main #register .row .right a {
+  color: #fff;
+  font-weight: 400;
+  font-size: 20px;
+  margin-top: 10px;
+}
+main #register .row .right a b {
+  margin-left: 5px;
+  font-weight: bold;
+}
+main .error {
+  color: #ef1e59;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 0 !important;
 }
 main #not-found {
   display: flex;
@@ -426,6 +450,68 @@ main #not-found a {
   color: #fff;
   font-size: 20px;
   margin-top: 10px;
+}
+main #login-form {
+  margin: 0 auto;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main #login-form form {
+  width: 100%;
+}
+main #login-form form .login-github {
+  cursor: pointer;
+  background: #000;
+  border-radius: 10px;
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  padding: 15px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  width: 100%;
+}
+main #login-form form .login-github:hover {
+  opacity: 0.8;
+}
+main #login-form form .login-github svg {
+  margin-left: 10px;
+}
+main #login-form a {
+  color: #fff;
+  font-weight: 400;
+  font-size: 18px;
+  margin-top: 20px;
+}
+main #login-form a b {
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+#error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  flex-direction: column;
+}
+#error div {
+  height: 300px;
+}
+#error div img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#error p {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #50cf52;
+  font-weight: bold;
 }
 
 #blog-detail {
@@ -664,14 +750,23 @@ footer ul li p {
     flex-direction: column;
   }
   main #register .row .left {
-    height: 300px;
+    height: 250px;
     margin-bottom: 20px;
   }
   main #register .row .right {
     order: 1;
-    width: 100%;
-    display: grid;
-    place-items: center;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  main #register .row .right .error,
+  main #register .row .right a {
+    font-size: 18px;
+  }
+  main #register .row .right .error {
+    margin-bottom: -10px !important;
+  }
+  main #register .row .right a {
+    margin-top: 20px;
   }
   #blog-detail {
     padding-top: 0;
@@ -793,6 +888,14 @@ footer ul li p {
   main .form button {
     padding: 10px 0;
     font-size: 18px;
+    margin-bottom: 0;
+  }
+  main #login-form form .login-github {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  main #login-form form .login-github svg {
+    margin-left: 10px;
   }
   footer {
     padding: 0 20px 20px;
