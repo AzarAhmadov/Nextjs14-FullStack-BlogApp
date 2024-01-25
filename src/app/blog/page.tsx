@@ -1,7 +1,7 @@
-import PostCards from '@/components/postCards/PostCards'
-import { getPosts } from '@/lib/data'
-import { PostProps } from '@/types/types'
 import React from 'react'
+import { getPosts } from '@/lib/data'
+import PostCards from '@/components/postCards/PostCards'
+import { PostProps } from '@/types/types'
 
 export const metadata = {
     title: 'Blog Page',
