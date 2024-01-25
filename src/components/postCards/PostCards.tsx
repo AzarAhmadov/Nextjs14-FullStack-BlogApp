@@ -1,15 +1,21 @@
-'use client'
 import Link from 'next/link'
-import React from 'react'
+import React, { memo } from 'react'
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { CgCalendarDates } from "react-icons/cg";
 import { PostProps } from '@/types/types';
-
+import { auth } from '@/lib/auth';
+import { redirect } from 'next/navigation';
 interface PageDetailProps {
     post: PostProps;
 }
 
 const PostCards: React.FC<PageDetailProps> = async ({ post }) => {
+
+    const session = await auth();
+
+    if (!session) {
+        redirect('/login');
+    }
 
     return (
         <section className='post-cards'>
@@ -17,12 +23,12 @@ const PostCards: React.FC<PageDetailProps> = async ({ post }) => {
                 <div className='image-container'>
                     <img src={post.img} alt='post' />
                 </div>
-                <span className='category'>
-                    {post.category}
-                </span>
-                <p>
-                    {post.title}
-                </p>
+                {/* <span className='category'>
+                    {post?.category}
+                </span> */}
+                <h5>
+                    {post?.title}
+                </h5>
                 <span className="date">
                     <CgCalendarDates />
                     {post.createdAt.toString().slice(4, 16)}
@@ -38,4 +44,4 @@ const PostCards: React.FC<PageDetailProps> = async ({ post }) => {
     )
 }
 
-export default PostCards
+export default memo(PostCards)

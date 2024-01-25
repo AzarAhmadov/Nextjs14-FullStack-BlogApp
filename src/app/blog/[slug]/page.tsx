@@ -1,5 +1,7 @@
 import PostUser from '@/components/postUser/PostUser';
+import { auth } from '@/lib/auth';
 import { getPost } from '@/lib/data';
+import { redirect } from 'next/navigation';
 import React from 'react';
 interface PageDetailProps {
     params: {
@@ -19,6 +21,12 @@ export const generateMetadata = async ({ params }: PageDetailProps) => {
 
 const Page: React.FC<PageDetailProps> = async ({ params }) => {
 
+    const session = await auth();
+
+    if (!session) {
+        redirect('/login');
+    }
+
     const { slug } = params;
 
     const data = await getPost(slug);
@@ -27,7 +35,7 @@ const Page: React.FC<PageDetailProps> = async ({ params }) => {
         <section id='blog-detail'>
             <div className="row">
                 <div className="left">
-                    <img src={data?.img} alt='blog_detail' />
+                    <img loading='lazy' src={data?.img} alt='blog_detail' />
                 </div>
                 <div className="right">
                     <h4> {data.title} </h4>
