@@ -588,6 +588,87 @@ main {
             }
         }
     }
+
+    .no-blogs {
+        text-align: center;
+        width: 100%;
+        color: $color-2;
+        font-size: 20px;
+        position: absolute;
+        left: 0;
+
+    }
+
+    .admin-row {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 25px 0;
+
+        .form {
+            h3 {
+                color: $color-2;
+                margin-bottom: 20px;
+                font-size: 25px;
+            }
+        }
+
+        .admin-area {
+            padding-right: 40px;
+
+            .row {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-bottom: 1px solid #ffffff12;
+                padding: 10px 0;
+
+                button {
+                    background: #C70039;
+                    color: $color-2;
+                    border: none;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                    font-weight: bold;
+                    cursor: pointer;
+                }
+
+                div {
+                    display: flex;
+                    align-items: center;
+
+                    span {
+                        margin-left: 10px;
+                        font-weight: bold;
+                        font-size: 18px;
+                        color: $color-2;
+                    }
+
+                    img {
+                        width: 60px;
+                        height: 60px;
+                        border-radius: 10px;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+
+        div {
+            width: 100%;
+
+            h3 {
+                color: $color-2;
+                font-size: 25px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+.loading-time {
+    color: $color-2;
+    padding: 10px 0;
 }
 
 #error {
@@ -624,7 +705,8 @@ main {
         .left {
             width: 35%;
             height: 600px;
-            position: relative;
+            position: sticky;
+            top: 20px;
 
             img {
                 border-radius: 10px;
@@ -678,13 +760,6 @@ main {
     gap: 20px;
     margin: 20px 0;
 
-    img {
-        border-radius: 50%;
-        width: 35px;
-        height: 35px;
-        object-fit: cover;
-    }
-
     .username {
         font-size: 19px;
     }
@@ -695,6 +770,20 @@ main {
         display: flex;
         align-items: center;
         color: $color-2;
+
+        .profile-img {
+            border: 1px solid #ffffff3a;
+            border-radius: 50%;
+            padding: 2px;
+
+            img {
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+                object-fit: cover;
+            }
+        }
+
     }
 
     .date {
@@ -702,6 +791,28 @@ main {
         align-items: center;
         gap: 5px;
         color: #7d99b6;
+    }
+}
+
+.admin-icon {
+    a {
+        position: fixed;
+        right: 20px;
+        bottom: 50px;
+        border-radius: 50%;
+        background: $color-3;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #ffffff46;
+
+        svg {
+            width: 20px;
+            height: 20px;
+            color: $color-2;
+        }
     }
 }
 
@@ -924,6 +1035,43 @@ footer {
                 }
             }
         }
+
+        .admin-row {
+            flex-direction: column;
+
+            .form {
+                h3 {
+                    text-align: center;
+                    margin-top: 20px;
+                    font-size: 20px;
+                }
+            }
+
+            .admin-area {
+                padding-right: 0px;
+
+                h3 {
+                    font-size: 20px;
+                }
+
+                .row {
+
+                    div {
+                        display: flex;
+                        align-items: center;
+
+                        span {
+                            font-size: 18px;
+                        }
+
+                        img {
+                            width: 50px;
+                            height: 50px;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     #blog-detail {
@@ -939,6 +1087,8 @@ footer {
             .left {
                 width: 100%;
                 height: 240px;
+                position: relative;
+                top: 0;
 
                 img {
                     border-radius: 0;
