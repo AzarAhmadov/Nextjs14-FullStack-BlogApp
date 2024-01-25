@@ -2,7 +2,7 @@ import PostUser from '@/components/postUser/PostUser';
 import { auth } from '@/lib/auth';
 import { getPost } from '@/lib/data';
 import { redirect } from 'next/navigation';
-import React from 'react';
+import React, { Suspense } from 'react';
 interface PageDetailProps {
     params: {
         slug: string;
@@ -14,8 +14,8 @@ export const generateMetadata = async ({ params }: PageDetailProps) => {
     const data = await getPost(slug);
 
     return {
-        title: data.title,
-        description: data.desc,
+        title: data?.title,
+        description: data?.desc,
     };
 };
 
@@ -38,9 +38,11 @@ const Page: React.FC<PageDetailProps> = async ({ params }) => {
                     <img loading='lazy' src={data?.img} alt='blog_detail' />
                 </div>
                 <div className="right">
-                    <h4> {data.title} </h4>
-                    <PostUser data={data} />
-                    <p>{data.desc}</p>
+                    <h4> {data?.title} </h4>
+                    <Suspense fallback={<div className='loading-time'> Loading... </div>}>
+                        <PostUser data={data} />
+                    </Suspense>
+                    <p>{data?.desc}</p>
                 </div>
             </div>
         </section>
