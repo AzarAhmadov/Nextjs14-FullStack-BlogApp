@@ -15,7 +15,7 @@ Implementing an authorization system to control user access to specific function
 - Responsive Design: Ensuring a seamless and user-friendly experience across various screen sizes and devices through a responsive design approach.
 
 ## Technologies Used
-- Next JS
+- Next JS | Server Actions
 - TypeScript
 - Next Auth
 - Mongo DB / Mongoose
