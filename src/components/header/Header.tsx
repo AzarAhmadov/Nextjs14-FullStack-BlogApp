@@ -54,7 +54,6 @@ const Header: React.FC<Session> = ({ session }) => {
                     <div>
                         {session?.user ? (
                             <>
-                                {session.user?.isAdmin && <Links title="Admin" path="/admin" key={-1} />}
                                 <form action={LogoutGithub}>
                                     <button className='login'> Logout <CiLogout /> </button>
                                 </form>

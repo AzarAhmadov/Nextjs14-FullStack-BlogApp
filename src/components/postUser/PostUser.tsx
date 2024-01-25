@@ -14,13 +14,15 @@ const PostUser: React.FC<userProps> = async ({ data }) => {
     return (
         <div className="author">
             <div>
-                <img src={user.img ? user.img : userImg} alt={user.username} />
+                <div className='profile-img'>
+                    <img src={user?.img} alt={user?.username} />
+                </div>
                 <span className='username'>
-                    {user.username}
+                    {user?.username}
                 </span>
             </div>
             <span className="date">
-                <CgCalendarDates /> {user.createdAt.toString().slice(4, 16)}
+                <CgCalendarDates /> {user?.createdAt.toString().slice(4, 16)}
             </span>
         </div>
     )

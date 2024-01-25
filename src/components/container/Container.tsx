@@ -6,7 +6,7 @@ const Container = ({ children }: Readonly<{ children: React.ReactNode }>) => {
 
     useEffect(() => {
         window.scrollTo(0, 0);
-    }); 
+    });
 
     return (
         <>

@@ -1,9 +1,66 @@
 "use server"
 
 import { signIn, signOut } from "./auth"
-import { User } from "./models"
+import { User, Post } from "./models"
 import { connectToDb } from "./utils"
 import bcryptjs from "bcryptjs"
+import { revalidatePath } from "next/cache";
+
+export const addPost = async (prevState: any, formData: any) => {
+
+    const { title, desc, slug, userId, img } = Object.fromEntries(formData);
+
+    try {
+        connectToDb();
+        const newPost = new Post({
+            title,
+            desc,
+            img,
+            slug,
+            userId,
+        });
+
+        await newPost.save();
+        console.log("saved to db");
+        revalidatePath("/blog");
+        revalidatePath("/admin");
+    } catch (err) {
+        console.log(err);
+        return { error: "Something went wrong!" };
+    }
+};
+
+export const deletePost = async (formData: any) => {
+    const { id } = Object.fromEntries(formData);
+
+    try {
+        connectToDb();
+
+        await Post.findByIdAndDelete(id);
+        console.log("deleted from db");
+        revalidatePath("/blog");
+        revalidatePath("/admin");
+    } catch (err) {
+        console.log(err);
+        return { error: "Something went wrong!" };
+    }
+};
+
+export const deleteUser = async (formData: any) => {
+    const { id } = Object.fromEntries(formData);
+
+    try {
+        connectToDb();
+
+        await Post.deleteMany({ userId: id });
+        await User.findByIdAndDelete(id);
+        console.log("deleted from db");
+        revalidatePath("/admin");
+    } catch (err) {
+        console.log(err);
+        return { error: "Something went wrong!" };
+    }
+};
 
 export const GithubLogin = async () => {
     await signIn("github")

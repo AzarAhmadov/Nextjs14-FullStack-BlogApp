@@ -21,7 +21,7 @@ const PostCards: React.FC<PageDetailProps> = async ({ post }) => {
         <section className='post-cards'>
             <div className="post-content">
                 <div className='image-container'>
-                    <img src={post.img} alt='post' />
+                    <img src={post.img} alt={post.title} />
                 </div>
                 {/* <span className='category'>
                     {post?.category}
@@ -31,7 +31,7 @@ const PostCards: React.FC<PageDetailProps> = async ({ post }) => {
                 </h5>
                 <span className="date">
                     <CgCalendarDates />
-                    {post.createdAt.toString().slice(4, 16)}
+                    {post?.createdAt.toString().slice(4, 16)}
                 </span>
             </div>
             <div className="read-more">
