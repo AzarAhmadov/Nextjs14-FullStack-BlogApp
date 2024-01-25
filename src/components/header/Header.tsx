@@ -12,10 +12,6 @@ interface Session {
 
 const Header: React.FC<Session> = ({ session }) => {
 
-    useEffect(() => {
-        window.scrollTo(0, 0)
-    })
-
     const [mobile, setMobile] = useState(false)
     const mobileMenuRef = useRef<HTMLDivElement>(null);
 

@@ -2,6 +2,7 @@ import "../style/style.css";
 import Footer from "@/components/footer/Footer";
 import webLogo from '../../public/images/webLogo.png'
 import Navbar from "@/components/header/navbar/Navbar";
+import Container from "@/components/container/Container";
 
 export const metadata = {
   title: {
@@ -10,18 +11,16 @@ export const metadata = {
   }
 }
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children, }: Readonly<{ children: React.ReactNode; }>) {
   return (
     <html lang="en">
       <link rel="icon" type="image/png" href={webLogo.src} />
       <body>
         <div className="container">
           <Navbar />
-          {children}
+          <Container>
+            {children}
+          </Container>
           <Footer />
         </div>
       </body>

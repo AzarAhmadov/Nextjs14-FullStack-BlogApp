@@ -50,7 +50,6 @@ export const register = async (prevState: any, formData: any) => {
     }
 };
 
-
 export const login = async (prevState: any, formData: any) => {
     const { username, password } = Object.fromEntries(formData);
 
