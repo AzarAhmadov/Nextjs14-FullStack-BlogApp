@@ -1,6 +1,6 @@
 'use client'
 import Link from 'next/link';
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, memo } from 'react';
 import { navLinks } from '../constants/constants';
 import Links from './links/Links';
 import { FaBars } from "react-icons/fa6";
@@ -11,7 +11,10 @@ interface Session {
 }
 
 const Header: React.FC<Session> = ({ session }) => {
-    const isAdmin = true
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    })
 
     const [mobile, setMobile] = useState(false)
     const mobileMenuRef = useRef<HTMLDivElement>(null);
@@ -36,10 +39,6 @@ const Header: React.FC<Session> = ({ session }) => {
             document.removeEventListener('click', closeMenuOnOutsideClick);
         };
     }, [mobile]);
-
-    useEffect(() => {
-        window.scrollTo(0, 0)
-    })
 
     return (
         <>
@@ -103,4 +102,4 @@ const Header: React.FC<Session> = ({ session }) => {
     );
 };
 
-export default Header;
+export default memo(Header);
