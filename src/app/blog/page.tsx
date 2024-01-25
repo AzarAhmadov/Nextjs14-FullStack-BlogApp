@@ -15,9 +15,13 @@ const page: React.FC = async () => {
     return (
         <main>
             <div className="post-row">
-                {posts.map((post: PostProps) => (
-                    <PostCards post={post} key={post.id} />
-                ))}
+                {posts.length > 0 ? (
+                    posts.map((post: PostProps) => (
+                        <PostCards post={post} key={post.id} />
+                    ))
+                ) : (
+                    <p className='no-blogs'>No blogs yet.</p>
+                )}
             </div>
         </main>
     )
