@@ -99,6 +99,11 @@ header .row div {
   align-items: center;
   gap: 20px;
 }
+header .row div .for-admin {
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+}
 header .row div .login,
 header .row div .admin {
   padding: 15px 20px;
@@ -352,9 +357,10 @@ main .post-cards .category {
   font-size: 15px;
   font-weight: 500;
 }
-main .post-cards p {
+main .post-cards h5 {
   color: #fff;
   font-size: 20px;
+  margin-top: 10px;
   font-weight: 500;
 }
 main .post-cards .date {
@@ -673,14 +679,14 @@ footer ul li p {
   }
   .mobile-header ul li a {
     color: #fff;
-    font-size: 21px;
     transition: 300ms all;
+    font-size: 23px;
   }
   .mobile-header ul li a:hover {
     opacity: 0.8;
   }
   .mobile-header ul li a.active {
-    padding: 6px 10px;
+    padding: 6px 15px;
     border-radius: 10px;
     background: #fff;
     color: #000;
@@ -695,11 +701,11 @@ footer ul li p {
     margin-top: 0px;
   }
   .mobile-header div .login {
-    padding: 15px 20px;
+    padding: 13px 20px;
     border-radius: 10px;
     border: none;
     background: #078809;
-    font-size: 17px;
+    font-size: 20px;
     font-weight: 600;
     cursor: pointer;
     color: #fff;
@@ -882,8 +888,8 @@ footer ul li p {
   main .post-cards .image-container {
     height: 220px;
   }
-  main .post-cards p {
-    font-size: 16px;
+  main .post-cards h5 {
+    font-size: 18px;
   }
   main .form button {
     padding: 10px 0;

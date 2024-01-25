@@ -120,6 +120,11 @@ header {
             align-items: center;
             gap: 20px;
 
+            .for-admin {
+                color: $color-2;
+                font-weight: bold;
+                font-size: 18px;
+            }
 
             .login,
             .admin {
@@ -417,9 +422,10 @@ main {
             font-weight: 500;
         }
 
-        p {
+        h5 {
             color: $color-2;
             font-size: 20px;
+            margin-top: 10px;
             font-weight: 500;
         }
 
@@ -795,15 +801,15 @@ footer {
             li {
                 a {
                     color: $color-2;
-                    font-size: 21px;
                     transition: 300ms all;
+                    font-size: 23px;
 
                     &:hover {
                         opacity: 0.8;
                     }
 
                     &.active {
-                        padding: 6px 10px;
+                        padding: 6px 15px;
                         border-radius: 10px;
                         background: $color-2;
                         color: $color-1;
@@ -823,11 +829,11 @@ footer {
             }
 
             .login {
-                padding: 15px 20px;
+                padding: 13px 20px;
                 border-radius: 10px;
                 border: none;
                 background: #078809;
-                font-size: 17px;
+                font-size: 20px;
                 font-weight: 600;
                 cursor: pointer;
                 color: $color-2;
@@ -1073,8 +1079,8 @@ footer {
                 height: 220px;
             }
 
-            p {
-                font-size: 16px;
+            h5 {
+                font-size: 18px;
             }
         }
 

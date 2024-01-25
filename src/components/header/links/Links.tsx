@@ -1,7 +1,7 @@
 import { NavlinksProps } from "@/types/types";
 import Link from "next/link";
 import { usePathname } from 'next/navigation';
-import React from 'react';
+import React, { memo } from 'react'
 import { CiLogin } from "react-icons/ci";
 
 const Links: React.FC<NavlinksProps> = ({ title, path }) => {
@@ -10,11 +10,11 @@ const Links: React.FC<NavlinksProps> = ({ title, path }) => {
 
     return (
         <li>
-            <Link className={`${isActive ? 'active ' : ''}${title === 'Login' ? 'login' : ''}`} href={path}>
+            <Link className={` for-admin ${isActive ? 'active ' : ''}${title === 'Login' ? 'login' : ''}`} href={path}>
                 {title} {title === 'Login' ? <CiLogin /> : null}
             </Link>
         </li>
     );
 }; 1
 
-export default Links;
+export default memo(Links);
