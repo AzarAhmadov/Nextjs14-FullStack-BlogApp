@@ -3,6 +3,7 @@ import Footer from "@/components/footer/Footer";
 import webLogo from '../../public/images/webLogo.png'
 import Navbar from "@/components/header/navbar/Navbar";
 import Container from "@/components/container/Container";
+import AdminIcon from "@/components/adminIcon/AdminIcon";
 
 export const metadata = {
   title: {
@@ -23,6 +24,7 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
           </Container>
           <Footer />
         </div>
+        <AdminIcon />
       </body>
     </html>
   );
