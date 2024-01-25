@@ -1,4 +1,5 @@
 'use client'
+
 import React, { useEffect } from 'react'
 import { register } from '@/lib/action'
 import Image from 'next/image'
@@ -6,20 +7,15 @@ import { useFormState } from 'react-dom'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 
-export interface FormProps {
-    success?: boolean;
-    error?: string;
-}
-
 const RegisterForm = () => {
 
-    const [state, formAction] = useFormState<FormProps>(register, undefined);
+    const [state, formAction] = useFormState(register, undefined);
 
-    const router = useRouter()
+    const router = useRouter();
 
     useEffect(() => {
-        state?.success && router.push('/login')
-    }, [state?.success, router])
+        state?.success && router.push("/login");
+    }, [state?.success, router]);
 
     return (
         <section id='register'>

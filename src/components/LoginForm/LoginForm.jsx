@@ -6,9 +6,9 @@ import { useFormState } from 'react-dom';
 import { FormProps } from '../RegisterForm/RegisterForm';
 import Link from 'next/link';
 
-const LoginForm: React.FC = () => {
+const LoginForm = () => {
 
-    const [state, formAction] = useFormState<FormProps>(login, undefined);
+    const [state, formAction] = useFormState(login, undefined);
 
     return (
         <section id='login-form'>
