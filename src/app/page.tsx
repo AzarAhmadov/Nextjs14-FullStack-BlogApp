@@ -34,7 +34,7 @@ const Home = () => {
           </ul>
         </div>
         <div className='right'>
-          <Image fill src='/images/banner.png' alt='hero' />
+          <Image fill src='/images/banner.png' alt='Hero' />
         </div>
       </section>
     </main>
