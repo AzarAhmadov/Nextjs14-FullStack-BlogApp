@@ -1,6 +1,5 @@
 import LoginForm from '@/components/LoginForm/LoginForm';
 import { auth } from '@/lib/auth';
-import { getUser } from '@/lib/data';
 import { redirect } from 'next/navigation';
 import React from 'react';
 
