@@ -19,8 +19,9 @@ Implementing an authorization system to control user access to specific function
 - TypeScript
 - Next Auth
 - Mongo DB / Mongoose
-- bcryptjs
+- Bcryptjs
 - Nodemailer
+- Sass
 
 ## Contributing
 Open to your ideas! Share feedback, report issues, or send pull requests to enhance this project
