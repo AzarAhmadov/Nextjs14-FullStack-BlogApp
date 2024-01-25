@@ -2,14 +2,13 @@ import { getUser } from '@/lib/data';
 import { PostUserProps } from '@/types/types';
 import React from 'react'
 import { CgCalendarDates } from 'react-icons/cg';
-import userImg from '../../../public/images/user.jpeg'
 interface userProps {
     data: PostUserProps;
 }
 
 const PostUser: React.FC<userProps> = async ({ data }) => {
 
-    const user = await getUser(data.userId)
+    const user = await getUser('65b297e01424735511bbe770')
 
     return (
         <div className="author">

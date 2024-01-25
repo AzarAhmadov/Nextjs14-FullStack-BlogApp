@@ -8,6 +8,10 @@ const AdminPostForm = ({ userId }) => {
 
     const [state, formAction] = useFormState(addPost, undefined);
 
+    const refresh = () => {
+        window.location.href = '/admin';
+    }
+
     return (
         <form className='form' action={formAction}>
             <h3>Add New Post</h3>
@@ -16,7 +20,7 @@ const AdminPostForm = ({ userId }) => {
             <input type="text" name="slug" placeholder="slug" />
             <input type="text" name="img" placeholder="img" />
             <textarea type="text" name="desc" placeholder="desc" rows={10} />
-            <button>Add</button>
+            <button onClick={refresh}>Add</button>
             {state?.error && <div style={{ marginBottom: '13px', marginTop: '13px', textAlign: "center" }} className='error'> {state.error}  </div>}
         </form>
     )

@@ -38,11 +38,11 @@ const Page: React.FC<PageDetailProps> = async ({ params }) => {
                     <img loading='lazy' src={data?.img} alt='blog_detail' />
                 </div>
                 <div className="right">
-                    <h4> {data?.title} </h4>
+                    <h3 className='title'> {data?.title} </h3>
                     <Suspense fallback={<div className='loading-time'> Loading... </div>}>
                         <PostUser data={data} />
                     </Suspense>
-                    <p>{data?.desc}</p>
+                    <div dangerouslySetInnerHTML={{ __html: data.desc }} />
                 </div>
             </div>
         </section>

@@ -21,7 +21,7 @@ const PostCards: React.FC<PageDetailProps> = async ({ post }) => {
         <section className='post-cards'>
             <div className="post-content">
                 <div className='image-container'>
-                    <img src={post.img} alt={post.title} />
+                    <img src={post?.img} alt={post.title} />
                 </div>
                 {/* <span className='category'>
                     {post?.category}

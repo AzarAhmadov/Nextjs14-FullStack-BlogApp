@@ -1,6 +1,5 @@
 import React from 'react'
 import { getPosts } from '@/lib/data'
-import NoImg from '../../../public/images/no-image.jpeg'
 import { deletePost } from '@/lib/action'
 
 const AdminPosts: React.FC = async () => {
