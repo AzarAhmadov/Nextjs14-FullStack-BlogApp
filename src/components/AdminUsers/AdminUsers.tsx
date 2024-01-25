@@ -9,7 +9,7 @@ const AdminUsers: React.FC = async () => {
     return (
         <section className='admin-area'>
             <h3> Users </h3>
-            {users.map((user) => (
+            {users.slice().reverse().map((user) => (
                 <div className='row' key={user.id}>
                     <div>
                         <img src={user.img === '' ? '/images/user.jpeg' : user.img} alt={user.title} />
