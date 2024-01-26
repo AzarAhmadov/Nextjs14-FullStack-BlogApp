@@ -12,7 +12,7 @@ const AdminUsers: React.FC = async () => {
             {users.slice().reverse().map((user) => (
                 <div className='row' key={user.id}>
                     <div>
-                        <img src={user.img === '' ? '/images/user.jpeg' : user.img} alt={user.title} />
+                        <img src={user.img ? user.img : '/images/user.jpeg'} alt={user.title} />
                         <span>{user.username}</span>
                     </div>
                     <form action={deleteUser}>
