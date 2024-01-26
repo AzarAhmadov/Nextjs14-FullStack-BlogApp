@@ -16,7 +16,7 @@ const page: React.FC = async () => {
         <main>
             <div className="post-row">
                 {posts.length > 0 ? (
-                    posts.map((post: PostProps) => (
+                    posts.reverse().map((post: PostProps) => (
                         <PostCards post={post} key={post.id} />
                     ))
                 ) : (

@@ -21,7 +21,7 @@ const PostUser: React.FC<userProps> = async ({ data }) => {
                 </span>
             </div>
             <span className="date">
-                <CgCalendarDates /> {user?.createdAt.toString().slice(4, 16)}
+                <CgCalendarDates /> {data?.createdAt.toString().slice(4, 16)}
             </span>
         </div>
     )
