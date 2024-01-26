@@ -19,8 +19,9 @@ Implementing an authorization system to control user access to specific function
 - TypeScript
 - Next Auth
 - Mongo DB / Mongoose
-- bcryptjs
+- Bcryptjs
 - Nodemailer
+- Sass
 
 ## Contributing
 Open to your ideas! Share feedback, report issues, or send pull requests to enhance this project
@@ -30,10 +31,10 @@ Azar Blog is deployed on Vercel, a popular platform for hosting web applications
 
 ## Screenshots
 <img width="1390" alt="Screenshot 2024-01-25 at 23 11 39" src="https://github.com/AzarAhmadov/Nextjs14-FullStack-BlogApp/assets/82292818/4165b6d2-ffc8-458a-8997-f410372f86f9">
-<img width="1390" alt="Screenshot 2024-01-25 at 23 11 44" src="https://github.com/AzarAhmadov/Nextjs14-FullStack-BlogApp/assets/82292818/41702066-c0ff-4387-ba30-851e4afe505e">
-<img width="1390" alt="Screenshot 2024-01-25 at 23 11 48" src="https://github.com/AzarAhmadov/Nextjs14-FullStack-BlogApp/assets/82292818/fff4ca04-8d10-4a66-950f-78cb1c0f1144">
+<img width="1368" alt="Screenshot 2024-01-26 at 01 16 19" src="https://github.com/AzarAhmadov/Nextjs14-FullStack-BlogApp/assets/82292818/809b3c58-b371-4c2b-a24c-512bddcd0fb1">
+<img width="1368" alt="Screenshot 2024-01-26 at 01 16 53" src="https://github.com/AzarAhmadov/Nextjs14-FullStack-BlogApp/assets/82292818/19aee93d-1d32-4067-bef3-869b0f98fc6c">
 <img width="1390" alt="Screenshot 2024-01-25 at 23 12 14" src="https://github.com/AzarAhmadov/Nextjs14-FullStack-BlogApp/assets/82292818/9aff5fea-8589-48fa-9b39-efbced1af6d7">
-<img width="1390" alt="Screenshot 2024-01-25 at 23 12 18" src="https://github.com/AzarAhmadov/Nextjs14-FullStack-BlogApp/assets/82292818/5623dcb6-e385-407e-978d-a609fc98b40a">
+<img width="1368" alt="Screenshot 2024-01-26 at 01 17 36" src="https://github.com/AzarAhmadov/Nextjs14-FullStack-BlogApp/assets/82292818/14c209ca-44a7-40e2-a32a-e5a18fb7efbe">
 <img width="1390" alt="Screenshot 2024-01-25 at 23 11 59" src="https://github.com/AzarAhmadov/Nextjs14-FullStack-BlogApp/assets/82292818/9204bbd8-218f-4fdd-b105-6afaccf1ea9c">
 <img width="1390" alt="Screenshot 2024-01-25 at 23 12 05" src="https://github.com/AzarAhmadov/Nextjs14-FullStack-BlogApp/assets/82292818/8f45b6ea-0a3b-4e95-a660-cf3ab7618258">
 <img width="1390" alt="Screenshot 2024-01-25 at 23 12 41" src="https://github.com/AzarAhmadov/Nextjs14-FullStack-BlogApp/assets/82292818/6e627327-52a1-439f-845b-401b8b8aa8ee">
