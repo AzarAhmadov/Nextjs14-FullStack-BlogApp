@@ -647,6 +647,13 @@ main .admin-row div h3 {
 #blog-detail .row .right div ul strong {
   margin: 0 3px;
 }
+#blog-detail .row .right div span {
+  margin-top: 20px;
+  display: block;
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
 
 #spinner {
   position: fixed;
