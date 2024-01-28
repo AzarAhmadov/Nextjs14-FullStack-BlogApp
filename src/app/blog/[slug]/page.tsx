@@ -42,7 +42,7 @@ const Page: React.FC<PageDetailProps> = async ({ params }) => {
                     <Suspense fallback={<div className='loading-time'> Loading... </div>}>
                         <PostUser data={data} />
                     </Suspense>
-                    <div dangerouslySetInnerHTML={{ __html: data.desc }} />
+                    <div className='desc' dangerouslySetInnerHTML={{ __html: data.desc }} />
                 </div>
             </div>
         </section>

@@ -618,36 +618,36 @@ main .admin-row div h3 {
   font-size: 35px;
   color: #fff;
 }
-#blog-detail .row .right div {
+#blog-detail .row .right .desc {
   color: rgba(255, 255, 255, 0.8549019608);
   line-height: 28px;
   font-size: 18px;
   font-family: "Roboto", sans-serif;
   font-weight: normal;
 }
-#blog-detail .row .right div h2 {
+#blog-detail .row .right .desc h2 {
   margin-bottom: 20px;
   font-size: 25px;
   font-weight: bold;
 }
-#blog-detail .row .right div h3 {
+#blog-detail .row .right .desc h3 {
   margin-bottom: 20px;
 }
-#blog-detail .row .right div p {
+#blog-detail .row .right .desc p {
   font-size: 18px;
   font-weight: 300;
   margin-bottom: 20px;
 }
-#blog-detail .row .right div ul {
+#blog-detail .row .right .desc ul {
   display: flex;
   flex-direction: column;
   gap: 20px;
   font-weight: 300;
 }
-#blog-detail .row .right div ul strong {
+#blog-detail .row .right .desc ul strong {
   margin: 0 3px;
 }
-#blog-detail .row .right div span {
+#blog-detail .row .right .desc span {
   margin-top: 20px;
   display: block;
   font-size: 18px;
@@ -952,21 +952,21 @@ footer ul li p {
   #blog-detail .row .right .title {
     font-size: 20px;
   }
-  #blog-detail .row .right div {
+  #blog-detail .row .right .desc {
     color: rgba(255, 255, 255, 0.8549019608);
     line-height: 28px;
     font-size: 18px;
     font-family: "Roboto", sans-serif;
     font-weight: normal;
   }
-  #blog-detail .row .right div h2 {
+  #blog-detail .row .right .desc h2 {
     margin-bottom: 10px;
     font-size: 20px;
   }
-  #blog-detail .row .right div h3 {
+  #blog-detail .row .right .desc h3 {
     margin-bottom: 20px;
   }
-  #blog-detail .row .right div p {
+  #blog-detail .row .right .desc p {
     font-size: 17px;
   }
 }
