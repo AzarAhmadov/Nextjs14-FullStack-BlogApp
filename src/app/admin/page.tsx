@@ -18,7 +18,7 @@ const page: React.FC = async () => {
     }
 
     return (
-        <div className="admin-row">
+        <section className="admin-row">
             <div>
                 <Suspense fallback={<div className='loading-time'> Loading... </div>}>
                     <AdminPosts />
@@ -30,7 +30,7 @@ const page: React.FC = async () => {
             <Suspense fallback={<div className='loading-time'> Loading... </div>}>
                 <AdminPostForm userId={userId} />
             </Suspense>
-        </div>
+        </section>
     )
 }
 

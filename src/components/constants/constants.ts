@@ -2,6 +2,9 @@ import React from 'react';
 import { CiInstagram } from "react-icons/ci";
 import { FaGithub } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
+import { RiExternalLinkLine } from "react-icons/ri";
+
+
 import { NavlinksProps } from "@/types/types";
 
 export const navLinks: NavlinksProps[] = [
@@ -35,5 +38,9 @@ export const sosials = [
     {
         icon: React.createElement(CiLinkedin),
         path: "https://www.linkedin.com/in/azar-ahmadov/"
+    },
+    {
+        icon: React.createElement(RiExternalLinkLine),
+        path: "https://www.azarahmadov.com/"
     }
 ];

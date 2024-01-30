@@ -17,9 +17,9 @@ const AdminPostForm = ({ userId }) => {
             <h3>Add New Post</h3>
             <input type="hidden" name="userId" value={userId} />
             <input type="text" name="title" placeholder="Title" />
-            <input type="text" name="slug" placeholder="slug" />
-            <input type="text" name="img" placeholder="img" />
-            <textarea type="text" name="desc" placeholder="desc" rows={10} />
+            <input type="text" name="slug" placeholder="Slug" />
+            <input type="text" name="img" placeholder="Img Url" />
+            <textarea type="text" name="desc" placeholder="Desc" rows={10} />
             <button onClick={refresh}>Add</button>
             {state?.error && <div style={{ marginBottom: '13px', marginTop: '13px', textAlign: "center" }} className='error'> {state.error}  </div>}
         </form>

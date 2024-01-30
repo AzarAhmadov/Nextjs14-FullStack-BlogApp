@@ -1,4 +1,5 @@
 'use client'
+
 import Link from 'next/link';
 import React, { useState, useEffect, useRef, memo } from 'react';
 import { navLinks } from '../constants/constants';
@@ -53,11 +54,9 @@ const Header: React.FC<Session> = ({ session }) => {
                     </ul>
                     <div>
                         {session?.user ? (
-                            <>
-                                <form action={LogoutGithub}>
-                                    <button className='login'> Logout <CiLogout /> </button>
-                                </form>
-                            </>
+                            <form action={LogoutGithub}>
+                                <button className='login'> Logout <CiLogout /> </button>
+                            </form>
                         ) : (
                             <Links title="Login" path="/login" key={-1} />
                         )}

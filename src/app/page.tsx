@@ -25,7 +25,7 @@ const Home = () => {
         <ul className="sosial">
           {
             sosials.map((el, idx) => (
-              <a href={el.path} target='_blank' key={idx}>
+              <a style={{ display: "flex" }} href={el.path} target='_blank' key={idx}>
                 {el.icon}
               </a>
             ))
