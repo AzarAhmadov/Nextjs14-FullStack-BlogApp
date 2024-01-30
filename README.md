@@ -7,11 +7,17 @@ Live demo : http://azarblog.vercel.app/
 
 ## Features 
 - Next.js and TypeScript Integration: Utilizing Next.js and TypeScript for a robust and statically-typed frontend, providing enhanced development capabilities and code maintainability.
+  
 - MongoDB Database Integration: Employing MongoDB as the database solution, offering flexibility and scalability for efficient data storage and retrieval.
+
 - User Authentication and Authorization: Allowing users to sign in using GitHub credentials or by filling out a custom form.
-Implementing an authorization system to control user access to specific functionalities.
+  
+- Implementing an authorization system to control user access to specific functionalities.
+  
 - Admin Panel Features: Admin panel for managing blog posts, allowing creation and deletion operations.
+  
 - SEO-Friendly Structure: Utilizing SEO-friendly URLs and optimizing meta tags for better search engine visibility.
+
 - Responsive Design: Ensuring a seamless and user-friendly experience across various screen sizes and devices through a responsive design approach.
 
 ## Technologies Used
