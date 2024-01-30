@@ -27,6 +27,7 @@ Live demo : http://azarblog.vercel.app/
 - Mongo DB / Mongoose
 - Bcryptjs
 - Nodemailer
+- Framer Motion
 - Sass
 
 ## Contributing
