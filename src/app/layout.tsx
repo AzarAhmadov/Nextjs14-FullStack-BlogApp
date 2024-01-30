@@ -2,7 +2,6 @@ import "../style/style.css";
 import Footer from "@/components/footer/Footer";
 import webLogo from '../../public/images/webLogo.png'
 import Navbar from "@/components/header/navbar/Navbar";
-import Container from "@/components/container/Container";
 import AdminIcon from "@/components/adminIcon/AdminIcon";
 
 export const metadata = {
@@ -19,9 +18,7 @@ const RootLayout = ({ children, }: Readonly<{ children: React.ReactNode; }>) => 
       <body>
         <div className="container">
           <Navbar />
-          <Container>
-            {children}
-          </Container>
+          {children}
           <Footer />
         </div>
         <AdminIcon />
