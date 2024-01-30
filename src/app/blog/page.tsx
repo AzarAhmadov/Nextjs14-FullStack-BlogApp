@@ -13,17 +13,15 @@ const page: React.FC = async () => {
     const posts = await getPosts()
 
     return (
-        <main>
-            <div className="post-row">
-                {posts.length > 0 ? (
-                    posts.reverse().map((post: PostProps) => (
-                        <PostCards post={post} key={post.id} />
-                    ))
-                ) : (
-                    <p className='no-blogs'>No blogs yet.</p>
-                )}
-            </div>
-        </main>
+        <div className="post-row">
+            {posts.length > 0 ? (
+                posts.reverse().map((post: PostProps) => (
+                    <PostCards post={post} key={post.id} />
+                ))
+            ) : (
+                <p className='no-blogs'>No blogs yet.</p>
+            )}
+        </div>
     )
 }
 
