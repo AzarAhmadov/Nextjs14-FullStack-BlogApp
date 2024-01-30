@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <section id="home">
       <div className='left'>
-        <h1> Azar's Blog </h1>
+        <h1> Azar's Blogs </h1>
         <p>
           Discover Web Technologies! Explore the latest in web technology news and innovations with us. Don't miss our insights into the technologies shaping the future of the internet! Let's explore the web world together.
           <span>
