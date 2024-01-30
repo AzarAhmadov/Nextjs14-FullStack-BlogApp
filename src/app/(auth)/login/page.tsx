@@ -19,9 +19,7 @@ const LoginPage: React.FC = async () => {
     }
 
     return (
-        <main>
-            <LoginForm />
-        </main>
+        <LoginForm />
     );
 };
 

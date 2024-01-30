@@ -8,9 +8,7 @@ export const metadata = {
 
 const page: React.FC = () => {
     return (
-        <main>
-            <RegisterForm />
-        </main>
+        <RegisterForm />
     )
 }
 

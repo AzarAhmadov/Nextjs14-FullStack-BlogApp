@@ -217,7 +217,6 @@ main {
 
             h1 {
                 color: $color-2;
-                width: 200px;
                 font-size: 65px;
                 line-height: 80px;
             }
@@ -227,7 +226,7 @@ main {
                 color: $color-5;
                 font-weight: 500;
                 font-size: 19px;
-                line-height: 28px;
+                line-height: 30px;
                 display: flex;
                 flex-direction: column;
 
@@ -289,18 +288,20 @@ main {
 
                 h3 {
                     color: $color-4;
-                    margin-bottom: 25px;
+                    margin-bottom: 10px;
                     font-size: 40px;
                 }
 
                 h2 {
                     color: $color-2;
                     font-size: 40px;
-                    margin-bottom: 30px;
+                    margin-bottom: 15px;
                 }
 
                 p {
                     color: $color-5;
+                    font-size: 18px;
+                    line-height: 27px;
                 }
 
 
@@ -1232,6 +1233,7 @@ footer {
                         p {
                             margin-top: 5px;
                             font-size: 13px;
+                            line-height: 20px;
                         }
                     }
                 }

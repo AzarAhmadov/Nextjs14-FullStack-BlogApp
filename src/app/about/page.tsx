@@ -8,43 +8,38 @@ export const metadata = {
 
 const page: React.FC = () => {
     return (
-        <main>
-            <section id='about'>
-                <div className="row">
-                    <div className="left">
-                        <h3 className="title">
-                            About Agency
-                        </h3>
-                        <h2>
-                            We create digital ideas that are bigger, bolder braver and better
-                        </h2>
-                        <p>
-                            We create digital ideas that are bigger, bolder, braver and better. We
-                            believe in good ideas flexibility and precission We’re world’s Our
-                            Special Team best consulting & finance solution provider. Wide range
-                            of web and software development services.
-                        </p>
-                        <ul>
-                            <li>
-                                <span> 10 K+ </span>
-                                <p>Year of experience</p>
-                            </li>
-                            <li>
-                                <span> 234 K+ </span>
-                                <p>People reacted</p>
-                            </li>
-                            <li>
-                                <span> 5 K+ </span>
-                                <p>Services and plugins</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div className="right">
-                        <Image fill src='/images/about.png' alt='About' />
-                    </div>
+        <section id='about'>
+            <div className="row">
+                <div className="left">
+                    <h3 className="title">
+                        About Azar's Blog
+                    </h3>
+                    <h2>
+                        Exploring the Latest in Web Technologies
+                    </h2>
+                    <p>
+                        We're dedicated to sharing the most recent developments in web technologies. From front-end frameworks to back-end solutions, we cover it all. Join us as we delve into the world of the latest web technologies, keeping you informed and inspired.
+                    </p>
+                    <ul>
+                        <li>
+                            <span> 3 K+ </span>
+                            <p>Year of experience</p>
+                        </li>
+                        <li>
+                            <span> 34 K+ </span>
+                            <p>People reacted</p>
+                        </li>
+                        <li>
+                            <span> 1 K+ </span>
+                            <p>Daily visitors</p>
+                        </li>
+                    </ul>
                 </div>
-            </section>
-        </main >
+                <div className="right">
+                    <Image fill src='/images/about.png' alt='About' />
+                </div>
+            </div>
+        </section>
     )
 }
 

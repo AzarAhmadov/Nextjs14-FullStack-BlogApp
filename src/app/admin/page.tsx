@@ -18,21 +18,19 @@ const page: React.FC = async () => {
     }
 
     return (
-        <main>
-            <div className="admin-row">
-                <div>
-                    <Suspense fallback={<div className='loading-time'> Loading... </div>}>
-                        <AdminPosts />
-                    </Suspense>
-                    <Suspense fallback={<div className='loading-time'> Loading... </div>}>
-                        <AdminUsers />
-                    </Suspense>
-                </div>
+        <div className="admin-row">
+            <div>
                 <Suspense fallback={<div className='loading-time'> Loading... </div>}>
-                    <AdminPostForm userId={userId} />
+                    <AdminPosts />
+                </Suspense>
+                <Suspense fallback={<div className='loading-time'> Loading... </div>}>
+                    <AdminUsers />
                 </Suspense>
             </div>
-        </main>
+            <Suspense fallback={<div className='loading-time'> Loading... </div>}>
+                <AdminPostForm userId={userId} />
+            </Suspense>
+        </div>
     )
 }
 

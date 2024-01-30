@@ -183,7 +183,6 @@ main #home div ul.sosial svg {
 }
 main #home div h1 {
   color: #fff;
-  width: 200px;
   font-size: 65px;
   line-height: 80px;
 }
@@ -192,7 +191,7 @@ main #home div p {
   color: rgba(255, 255, 255, 0.8549019608);
   font-weight: 500;
   font-size: 19px;
-  line-height: 28px;
+  line-height: 30px;
   display: flex;
   flex-direction: column;
 }
@@ -241,16 +240,18 @@ main #about .row div {
 }
 main #about .row div h3 {
   color: #50cf52;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
   font-size: 40px;
 }
 main #about .row div h2 {
   color: #fff;
   font-size: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 main #about .row div p {
   color: rgba(255, 255, 255, 0.8549019608);
+  font-size: 18px;
+  line-height: 27px;
 }
 main #about .row div img {
   -o-object-fit: contain;
@@ -1022,6 +1023,7 @@ footer ul li p {
   main #about .row ul li p {
     margin-top: 5px;
     font-size: 13px;
+    line-height: 20px;
   }
   main #home {
     flex-direction: column;
