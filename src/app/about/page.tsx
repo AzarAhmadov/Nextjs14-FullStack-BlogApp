@@ -12,7 +12,7 @@ const page: React.FC = () => {
             <div className="row">
                 <div className="left">
                     <h3 className="title">
-                        About Azar's Blog
+                        About Azar's Blogs
                     </h3>
                     <h2>
                         Exploring the Latest in Web Technologies
