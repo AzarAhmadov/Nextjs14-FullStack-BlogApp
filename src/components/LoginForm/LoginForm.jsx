@@ -1,9 +1,9 @@
 'use client'
+
 import React from 'react'
 import { GithubLogin, login } from '@/lib/action';
 import { FaGithub } from "react-icons/fa";
 import { useFormState } from 'react-dom';
-import { FormProps } from '../RegisterForm/RegisterForm';
 import Link from 'next/link';
 
 const LoginForm = () => {
@@ -13,7 +13,7 @@ const LoginForm = () => {
     return (
         <section id='login-form'>
             <form className='form' action={formAction}>
-                <input required type="text" name="username" placeholder='Username' />
+                <input required type="text" name="username" placeholder='User Name' />
                 <input required type="password" name="password" placeholder='Password' />
                 <button> Login with Credentials </button>
             </form>

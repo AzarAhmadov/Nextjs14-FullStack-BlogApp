@@ -22,7 +22,7 @@ const RegisterForm = () => {
             <div className="row">
                 <div className="right">
                     <form action={formAction} className='form'>
-                        <input required type="text" placeholder='Username' name='username' />
+                        <input required type="text" placeholder='User Name' name='username' />
                         <input required type="email" placeholder='Email' name='email' />
                         <input required type="password" placeholder='Password' name='password' />
                         <input required type="password" placeholder='Password Again' name='passwordRepeat' />

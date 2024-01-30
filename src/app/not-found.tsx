@@ -9,7 +9,7 @@ const NotFound = () => {
                 <div className="img-area">
                     <Image alt='page not found' src='/images/not-found.png' fill />
                 </div>
-                <span> page not found  </span>
+                <span> Page not found  </span>
                 <Link href='/'> Go back </Link>
             </section>
         </main>

@@ -11,7 +11,7 @@ const Home = () => {
         <p>
           Discover Web Technologies! Explore the latest in web technology news and innovations with us. Don't miss our insights into the technologies shaping the future of the internet! Let's explore the web world together.
           <span>
-            #TechTrends #InnovationUnleashed 🌐
+            #FrontEnd-Developer #Web-debeloper 🌐
           </span>
         </p>
         <ul className='links'>

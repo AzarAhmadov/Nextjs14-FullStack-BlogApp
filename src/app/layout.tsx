@@ -12,7 +12,7 @@ export const metadata = {
   }
 }
 
-export default function RootLayout({ children, }: Readonly<{ children: React.ReactNode; }>) {
+const RootLayout = ({ children, }: Readonly<{ children: React.ReactNode; }>) => {
   return (
     <html lang="en">
       <link rel="icon" type="image/png" href={webLogo.src} />
@@ -29,3 +29,5 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
     </html>
   );
 }
+
+export default RootLayout
