@@ -6,7 +6,7 @@ import { connectToDb } from "./utils"
 import bcryptjs from "bcryptjs"
 import { revalidatePath } from "next/cache";
 
-export const addPost = async (prevState: any, formData: any) => {
+export const addPost = async (prevState: FormData, formData: FormData) => {
 
     const { title, desc, slug, userId, img } = Object.fromEntries(formData);
 
@@ -30,7 +30,7 @@ export const addPost = async (prevState: any, formData: any) => {
     }
 };
 
-export const deletePost = async (formData: any) => {
+export const deletePost = async (formData: FormData) => {
     const { id } = Object.fromEntries(formData);
 
     try {
@@ -46,7 +46,7 @@ export const deletePost = async (formData: any) => {
     }
 };
 
-export const deleteUser = async (formData: any) => {
+export const deleteUser = async (formData: FormData) => {
     const { id } = Object.fromEntries(formData);
 
     try {
@@ -70,7 +70,7 @@ export const LogoutGithub = async () => {
     await signOut()
 }
 
-export const register = async (prevState: any, formData: any) => {
+export const register = async (prevState: FormData, formData: FormData) => {
 
     const { username, email, password, passwordRepeat, img } = Object.fromEntries(formData);
 
@@ -88,7 +88,7 @@ export const register = async (prevState: any, formData: any) => {
         }
 
         const salt = await bcryptjs.genSalt(10)
-        const hashedPassword = await bcryptjs.hash(password, salt)
+        const hashedPassword: string = await bcryptjs.hash(password as string, salt as string);
 
         const newUser = new User({
             username,
@@ -107,7 +107,7 @@ export const register = async (prevState: any, formData: any) => {
     }
 };
 
-export const login = async (prevState: any, formData: any) => {
+export const login = async (prevState: FormData, formData: FormData) => {
     const { username, password } = Object.fromEntries(formData);
 
     try {
