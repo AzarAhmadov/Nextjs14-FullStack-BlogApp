@@ -37,8 +37,8 @@ Open to your ideas! Share feedback, report issues, or send pull requests to enha
 Azar Blog is deployed on Vercel, a popular platform for hosting web applications.
 
 ## Screenshots
-<img width="1377" alt="Screenshot 2024-01-31 at 02 52 38" src="https://github.com/AzarAhmadov/Nextjs14-FullStack-BlogApp/assets/82292818/f08f9ffa-02c1-4d6f-8b69-c5c603b067e1">
-<img width="1377" alt="Screenshot 2024-01-31 at 02 52 45" src="https://github.com/AzarAhmadov/Nextjs14-FullStack-BlogApp/assets/82292818/b79d0b59-f24d-4bcb-bc3e-e4cc5479fb69">
+<img width="1377" alt="Screenshot 2024-01-31 at 03 00 53" src="https://github.com/AzarAhmadov/Nextjs14-FullStack-BlogApp/assets/82292818/2daf2218-ebad-4e64-befa-b88a0ff367a0">
+<img width="1377" alt="Screenshot 2024-01-31 at 03 01 00" src="https://github.com/AzarAhmadov/Nextjs14-FullStack-BlogApp/assets/82292818/47a5262f-8d1f-4261-9cb0-8b7036d8c508">
 <img width="1368" alt="Screenshot 2024-01-26 at 01 16 53" src="https://github.com/AzarAhmadov/Nextjs14-FullStack-BlogApp/assets/82292818/19aee93d-1d32-4067-bef3-869b0f98fc6c">
 <img width="1390" alt="Screenshot 2024-01-25 at 23 12 14" src="https://github.com/AzarAhmadov/Nextjs14-FullStack-BlogApp/assets/82292818/9aff5fea-8589-48fa-9b39-efbced1af6d7">
 <img width="1368" alt="Screenshot 2024-01-26 at 01 17 36" src="https://github.com/AzarAhmadov/Nextjs14-FullStack-BlogApp/assets/82292818/14c209ca-44a7-40e2-a32a-e5a18fb7efbe">
