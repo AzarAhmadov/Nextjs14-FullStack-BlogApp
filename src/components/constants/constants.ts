@@ -5,7 +5,7 @@ import { CiLinkedin } from "react-icons/ci";
 import { RiExternalLinkLine } from "react-icons/ri";
 
 
-import { NavlinksProps } from "@/types/types";
+import { NavlinksProps, Sosials } from "@/types/types";
 
 export const navLinks: NavlinksProps[] = [
     {
@@ -26,7 +26,7 @@ export const navLinks: NavlinksProps[] = [
     },
 ];
 
-export const sosials = [
+export const sosials: Sosials[] = [
     {
         icon: React.createElement(CiInstagram),
         path: "https://www.instagram.com/azarahmadov_/"

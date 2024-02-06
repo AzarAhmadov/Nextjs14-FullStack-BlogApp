@@ -3,6 +3,11 @@ export type NavlinksProps = {
     path: string;
 };
 
+export type Sosials = {
+    icon: JSX.Element; 
+    path: string;
+}
+
 export type PostProps = {
     id: number;
     title: string;
