@@ -3,26 +3,21 @@ import { auth } from '@/lib/auth';
 import { getPost } from '@/lib/data';
 import { redirect } from 'next/navigation';
 import React, { Suspense } from 'react';
-import { Metadata, ResolvingMetadata } from 'next'
 interface PageDetailProps {
     params: {
         slug: string;
     };
 }
 
-export async function generateMetadata({ params }: PageDetailProps) {
+export const generateMetadata = async ({ params }: PageDetailProps) => {
     const { slug } = params;
     const data = await getPost(slug);
-    const imageUrl = data.img
 
     return {
         title: data?.title,
         description: data?.desc,
-        openGraph: {
-            images: [imageUrl]
-        }
     };
-}
+};
 
 const Page: React.FC<PageDetailProps> = async ({ params }) => {
 
